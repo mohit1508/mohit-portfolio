@@ -21,15 +21,11 @@ const about = {
         },
         {
             fieldName: "Phone",
-            fieldValue: "(+1) 551 359 9513"
+            fieldValue: "(+1) 551-359-9513"
         },
         {
             fieldName: "Experience",
-            fieldValue: "4+ Years"
-        },
-        {
-            fieldName: "Skype",
-            fieldValue: "Mohit Khandelwal"
+            fieldValue: "4 Years"
         },
         {
             fieldName: "Nationality",
@@ -50,17 +46,17 @@ const about = {
 const experience = {
     icon: '/assets/resume/badge.svg',
     title: "My experience",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "I have 4 years of professional experience as a software developer where I worked in the development of highly optimized web applications, decreasing transaction processing time, resulting an increase in user engagement.",
     items: [
         {
             company: "CitiusTech",
             position: "Software Developer",
-            duration: "2022 - 2023",
+            duration: "06/2022 - 05/2023",
         },
         {
             company: "Tata Consultancy Services",
             position: "System Developer",
-            duration: "2019 - 2022",
+            duration: "07/2019 - 06/2022",
         },
     ],
 };
@@ -69,7 +65,7 @@ const experience = {
 const education = {
     icon: '/assets/resume/cap.svg',
     title: "My education",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "",
     items: [
         {
             institution: "University at Buffalo",
@@ -77,10 +73,19 @@ const education = {
             duration: "07/2023 - 06/2024",
         },
         {
-            institution: "Rajiv Gandhi Proudyogiki Vishwavidhalaya",
+            institution: "RGPV, India",
             degree: "BE in Computer Science",
             duration: "08/2015 - 06/2019",
         },
+    ],
+};
+
+// certifications data
+const certifications = {
+    icon: '/assets/resume/cap.svg',
+    title: "My certifications",
+    description: "",
+    items: [
         {
             institution: "Amazon Web Services",
             degree: "Certified Cloud Practitioner",
@@ -102,7 +107,7 @@ const education = {
 // skills data
 const skills = {
     title: "My skills",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "",
     skillList: [
         {
             icon: <FaHtml5 />,
@@ -168,6 +173,7 @@ const Resume = () => {
                     <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
                         <TabsTrigger value="experience">Experience</TabsTrigger>
                         <TabsTrigger value="education">Education</TabsTrigger>
+                        <TabsTrigger value="certifications">Certifications</TabsTrigger>
                         <TabsTrigger value="skills">Skills</TabsTrigger>
                         <TabsTrigger value="about">About me</TabsTrigger>
                     </TabsList>
@@ -215,6 +221,37 @@ const Resume = () => {
                                 <ScrollArea className="h-[400px]">
                                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                                     {education.items.map((item, index) => {
+                                        return (
+                                            <li 
+                                                key={index}
+                                                className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                                            >
+                                                <span className="text-accent">{item.duration}</span>
+                                                <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                                                    {item.degree}
+                                                </h3>
+                                                <div className="flex items-center gap-3">
+                                                    {/* dot */}
+                                                    <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                                                    <p className="text-white/60">{item.institution}</p>
+                                                </div>
+                                            </li>
+                                        );
+                                    })}
+                                    </ul>
+                                </ScrollArea>
+                            </div>
+                        </TabsContent>
+                        {/* certifications */}
+                        <TabsContent value="certifications" className="w-full">
+                        <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                                <h3 className="text-4xl font-bold">{certifications.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                                    {certifications.description}
+                                </p>
+                                <ScrollArea className="h-[400px]">
+                                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                    {certifications.items.map((item, index) => {
                                         return (
                                             <li 
                                                 key={index}

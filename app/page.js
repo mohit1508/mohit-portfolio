@@ -5,7 +5,7 @@ import Link from "next/link";
 // components
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
-import Stats from "@/components/Stats";
+// import Stats from "@/components/Stats";
 
 const Home = () => {
   const resume_address = "https://drive.google.com/file/d/1b3kEqk4QNtzf-WVkmF5pFpd9-veYlg8c/view";
@@ -48,7 +48,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Stats />
+      {/* <Stats /> */}
     </section>
   )
 }

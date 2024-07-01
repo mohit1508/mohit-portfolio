@@ -13,18 +13,10 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 // about data
 const about = {
     title: "About Me",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "Hello, I am Mohit, a passionate full-stack developer from a small town in Eastern Madhya Pradesh, India. Coming from a family where technology is a common thread, I've always been inspired by its transformative power and the impact it can have on our daily lives. I am grateful for their unwavering support, which has empowered me to pursue higher education and embrace diverse professional opportunities across the globe.",
     info: [
         {
-            fieldName: "Name",
-            fieldValue: "Mohit Khandelwal"
-        },
-        {
-            fieldName: "Phone",
-            fieldValue: "(+1) 551-359-9513"
-        },
-        {
-            fieldName: "Experience",
+            fieldName: "Professional experience",
             fieldValue: "4 Years"
         },
         {
@@ -32,12 +24,16 @@ const about = {
             fieldValue: "Indian"
         },
         {
-            fieldName: "Email",
-            fieldValue: "mohitkhandelwal1997@yahoo.com"
-        },
-        {
             fieldName: "Languages",
             fieldValue: "English, Hindi"
+        },
+        {
+            fieldName: "Phone",
+            fieldValue: "(+1) 551-359-9513"
+        },
+        {
+            fieldName: "Email",
+            fieldValue: "mohitkhandelwal1997@yahoo.com"
         },
     ]
 };

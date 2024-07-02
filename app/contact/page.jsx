@@ -19,7 +19,7 @@ const info = [
     {
         icon: <FaPhoneAlt />,
         title: "Phone",
-        description: "(+1) 551 359 9513",
+        description: "(+1) 551-359-9513",
     },
     {
         icon: <FaEnvelope />,
@@ -29,7 +29,7 @@ const info = [
     {
         icon: <FaMapMarkedAlt />,
         title: "Address",
-        description: "Buffalo, NY, USA",
+        description: "Chicago, IL, USA",
     },
 ];
 

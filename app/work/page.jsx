@@ -32,7 +32,7 @@ const projects = [
         description: "Personal portfolio developed using Next.js, Tailwind CSS and Framer Motion.",
         stack: [{ name: "Javascript" }, { name: "Next.js" }, { name: "Html5" }, { name: "Tailwind.css" }],
         image: "/assets/work/thumb2.png",
-        live: "",
+        live: "https://portfolio-mohit-cyan.vercel.app/",
         github: "https://github.com/mohit1508/mohit-portfolio",
     },
 ]

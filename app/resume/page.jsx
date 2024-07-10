@@ -7,8 +7,15 @@ import {
     FaReact, 
     FaFigma, 
     FaNodeJs, 
+    FaGithub,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { 
+    SiTailwindcss, 
+    SiNextdotjs, 
+    SiMongodb, 
+    SiRedux, 
+    SiPostgresql 
+} from "react-icons/si";
 
 // about data
 const about = {
@@ -106,14 +113,6 @@ const skills = {
     description: "",
     skillList: [
         {
-            icon: <FaHtml5 />,
-            name: "html 5",
-        },
-        {
-            icon: <FaCss3 />,
-            name: "CSS 3",
-        },
-        {
             icon: <FaJs />,
             name: "javascript",
         },
@@ -132,6 +131,30 @@ const skills = {
         {
             icon: <FaNodeJs />,
             name: "node.js",
+        },
+        {
+            icon: <FaHtml5 />,
+            name: "html 5",
+        },
+        {
+            icon: <FaCss3 />,
+            name: "CSS 3",
+        },
+        {
+            icon: <SiRedux />,
+            name: "Redux",
+        },
+        {
+            icon: <SiMongodb />,
+            name: "MongoDB",
+        },
+        {
+            icon: <SiPostgresql />,
+            name: "PostgreSQL",
+        },
+        {
+            icon: <FaGithub />,
+            name: "GitHub",
         },
         {
             icon: <FaFigma />,

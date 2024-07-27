@@ -8,7 +8,7 @@ import Social from "@/components/Social";
 // import Stats from "@/components/Stats";
 
 const Home = () => {
-  const resume_address = "https://drive.google.com/file/d/1JejQO7XprKBDakN1UGbDUD1c0pnyWx-V/view";
+  const resume_address = "https://drive.google.com/file/d/1UgdE8wVMcHHVBUZ9nFGezd474AFE5SKW/view";
   return (
     <section className="h-full">
       <div className="container mx-auto">
@@ -20,7 +20,7 @@ const Home = () => {
               Hello I&apos;m <br /> <span className="text-accent">Mohit Khandelwal</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Passionate software developer with extensive experience in building scalable, and user-friendly web applications. Proven track record of optimizing applications to enhance user engagement and performance, with a keen focus on innovative problem-solving and collaborative development.
+              Experienced software developer with a strong background in full-stack development. Adept at leveraging technology to solve complex problems and deliver scalable solutions. Demonstrated expertise in leading development teams, optimizing system reliability, and integrating innovative solutions to improve data accuracy and operational efficiency.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

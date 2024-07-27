@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 import { SelectContent } from "@radix-ui/react-select";
 import { sendEmail } from "@/actions/sendEmail";
 import toast from "react-hot-toast";
-import { experimental_useFormStatus as useFormStatus } from "react-dom";
+import { useFormStatus } from "react-dom";
 
 const info = [
     {

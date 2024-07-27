@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -38,6 +39,13 @@ const info = [
 
 const Contact = () => {
     const { pending } = useFormStatus();
+
+    const[firstName, setFirstName] = useState("");
+    const[lastName, setLastName] = useState("");
+    const[email, setEmail] = useState("");
+    const[phoneNo, setPhoneNo] = useState("");
+    const[message, setMessage] = useState("");
+
     return (
         <motion.section
             initial={{ opacity: 0 }}
@@ -52,6 +60,11 @@ const Contact = () => {
                             className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
                             action={async (formData) => {
                                 const { data, error } = await sendEmail(formData);
+                                setFirstName("");
+                                setLastName("");
+                                setEmail("");
+                                setPhoneNo("");
+                                setMessage("");
                        
                                 if (error) {
                                   toast.error(error);
@@ -65,10 +78,10 @@ const Contact = () => {
                             <p className="text-white/60">Feel free to reach out for collaboration opportunities, project inquiries, or just to chat about the latest in technology. I look forward to connecting with you!</p>
                             {/* input */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <Input type="firstname" placeholder="First name" required />
-                                <Input type="lastname" placeholder="Last name" required />
-                                <Input name="senderEmail" type="email" placeholder="Email address" required />
-                                <Input type="phone" placeholder="Phone number" />
+                                <Input name="senderFirstName" type="firstname" placeholder="First name" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
+                                <Input name="senderLastName" type="lastname" placeholder="Last name" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
+                                <Input name="senderEmail" type="email" placeholder="Email address" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                                <Input name="senderPhoneNo" type="phone" placeholder="Phone number" value={phoneNo} onChange={(e) => setPhoneNo(e.target.value)} />
                             </div>
                             {/* select
                             <Select>
@@ -89,6 +102,8 @@ const Contact = () => {
                                 name="message" 
                                 className="h-[200px]"
                                 placeholder="Type your message here."
+                                value={message} 
+                                onChange={(e) => setMessage(e.target.value)}
                                 required
                             />
                             {/* button */}

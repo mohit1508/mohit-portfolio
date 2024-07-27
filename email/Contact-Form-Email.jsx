@@ -12,7 +12,7 @@ import {
 } from "@react-email/components";
 import { Tailwind } from "@react-email/tailwind";
 
-export default function ContactFormEmail({ message, senderEmail }) {
+const ContactFormEmail = ({ message, senderEmail }) => {
   return (
     <Html>
       <Head />
@@ -33,4 +33,6 @@ export default function ContactFormEmail({ message, senderEmail }) {
       </Tailwind>
     </Html>
   );
-}
+};
+
+export default ContactFormEmail;

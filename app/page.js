@@ -8,7 +8,7 @@ import Social from "@/components/Social";
 // import Stats from "@/components/Stats";
 
 const Home = () => {
-  const resume_address = "https://drive.google.com/file/d/1UgdE8wVMcHHVBUZ9nFGezd474AFE5SKW/view";
+  const resume_address = "https://drive.google.com/file/d/1mW-kvdZYlaZ5d3UtSZ5zHV-_IAUIwRMG/view";
   return (
     <section className="h-full">
       <div className="container mx-auto">

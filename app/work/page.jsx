@@ -17,21 +17,30 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
     {
         num: "01",
+        category: "Health Monitoring and Notification System",
+        title: "project 1",
+        description: "Health monitoring system that triggers notifications for threshold breaches, and stores them in a database. Physicians can manage thresholds and view real-time notifications.",
+        stack: [{ name: "TypeScript" }, { name: "React.js" }, { name: "Node.js" }, { name: "WebSocket" }],
+        image: "/assets/work/thumb1.png",
+        github: "https://github.com/mohit1508/realtime-notification-system",
+    },
+    {
+        num: "02",
         category: "Food delivery app",
         title: "project 1",
         description: "Food Delivery App using Swiggy's API for restaurant data, and menu browsing. It utilizes Swiggy's live API data to fetch real-time restaurant information.",
-        stack: [{ name: "Javascript" }, { name: "React.js" }, { name: "Html5" }, { name: "Css3" }],
-        image: "/assets/work/thumb1.png",
+        stack: [{ name: "Javascript" }, { name: "React.js" }, { name: "HTML5" }, { name: "CSS3" }],
+        image: "/assets/work/thumb2.png",
         live: "https://online-food-ordering-app.vercel.app/",
         github: "https://github.com/mohit1508/online-food-ordering-app",
     },
     {
-        num: "02",
+        num: "03",
         category: "portfolio project",
         title: "project 2",
         description: "Personal portfolio developed using Next.js, Tailwind CSS and Framer Motion.",
-        stack: [{ name: "Javascript" }, { name: "Next.js" }, { name: "Html5" }, { name: "Tailwind.css" }],
-        image: "/assets/work/thumb2.png",
+        stack: [{ name: "Javascript" }, { name: "Next.js" }, { name: "HTML5" }, { name: "Tailwind.css" }],
+        image: "/assets/work/thumb3.png",
         live: "https://portfolio-mohit-cyan.vercel.app/",
         github: "https://github.com/mohit1508/mohit-portfolio",
     },
@@ -83,18 +92,20 @@ const Work = () => {
                             {/* buttons */}
                             <div className="flex items-center gap-4">
                                 {/* live project button */}
-                                <Link href={project.live} target="_blank">
-                                    <TooltipProvider delayDuration={100}>
-                                        <Tooltip>
-                                            <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                                                <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                                            </TooltipTrigger>
-                                            <TooltipContent>
-                                                <p>Live project</p>
-                                            </TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
-                                </Link>
+                                {project.live && (
+                                    <Link href={project.live} target="_blank">
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                                <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                                                    <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                                                </TooltipTrigger>
+                                                <TooltipContent>
+                                                    <p>Live project</p>
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
+                                    </Link>
+                                )}
                                 {/* github project button */}
                                 <Link href={project.github} target="_blank">
                                     <TooltipProvider delayDuration={100}>

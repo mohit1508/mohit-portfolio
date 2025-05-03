@@ -16,10 +16,13 @@ import {
     SiMongodb, 
     SiRedux, 
     SiPostgresql,
+    SiSupabase,
     SiGraphql,
     SiVercel,
     SiFramer,
+    SiRender,
 } from "react-icons/si";
+import { DiRedis } from "react-icons/di";
 
 // about data
 const about = {
@@ -162,12 +165,20 @@ const skills = {
             name: "Redux",
         },
         {
+            icon: <SiPostgresql />,
+            name: "PostgreSQL",
+        },
+        {
+            icon: <SiSupabase />,
+            name: "Supabase",
+        },
+        {
             icon: <SiMongodb />,
             name: "MongoDB",
         },
         {
-            icon: <SiPostgresql />,
-            name: "PostgreSQL",
+            icon: <DiRedis />,
+            name: "Redis",
         },
         {
             icon: <SiGraphql />,
@@ -180,6 +191,10 @@ const skills = {
         {
             icon: <SiVercel />,
             name: "vercel",
+        },
+        {
+            icon: <SiRender />,
+            name: "Render",
         },
         {
             icon: <SiFramer />,

@@ -56,12 +56,17 @@ const about = {
 const experience = {
     icon: '/assets/resume/badge.svg',
     title: "My experience",
-    description: "I have 5 years of professional experience as a software developer where I worked in the development of scalable, secure, and optimized web applications, decreasing transaction processing time, resulting an increase in user engagement.",
+    description: "I have 6+ years of professional experience as a software developer where I worked in the development of scalable, secure, and optimized web applications, decreasing transaction processing time, resulting an increase in user engagement.",
     items: [
+        {
+            company: "Infosys",
+            position: "Specialist Programmer",
+            duration: "06/2025 - Present",
+        },
         {
             company: "Holiday Channel",
             position: "Senior Software Engineer",
-            duration: "10/2024 - Present",
+            duration: "10/2024 - 06/2025",
         },
         {
             company: "CitiusTech",
